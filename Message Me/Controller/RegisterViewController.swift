@@ -19,6 +19,18 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonIsPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "registerbutton", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "registerbutton" {
+             let _ = segue.destination as! ChatViewController
+                
+               print("segue created")
+            
+        }
+        else{
+            print("no segue performed")
+        }
     }
     
     

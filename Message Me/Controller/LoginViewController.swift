@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func loginButtonIsPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "loginbutton", sender: self)
     }
     /*
     // MARK: - Navigation
@@ -28,5 +30,16 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loginbutton" {
+             let _ = segue.destination as! ChatViewController
+                
+               print("segue created")
+            
+        }
+        else{
+            print("no segue performed")
+        }
+    }
+   
 }
