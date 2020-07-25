@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func loginButtonIsPressed(_ sender: UIButton) {
+    }
+    @IBAction func registerButtonIsPressed(_ sender: UIButton) {
+    }
+    
 }
 

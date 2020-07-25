@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1078E324CBAC5F00A9C83F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1078E124CBAC5F00A9C83F /* LoginViewController.swift */; };
+		9D1078E624CBAE1100A9C83F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1078E524CBAE1100A9C83F /* RegisterViewController.swift */; };
+		9D1078E824CBAEBE00A9C83F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1078E724CBAEBE00A9C83F /* ChatViewController.swift */; };
 		9D3E2FB824C9CB17002144FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E2FB724C9CB17002144FC /* AppDelegate.swift */; };
 		9D3E2FBA24C9CB17002144FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E2FB924C9CB17002144FC /* SceneDelegate.swift */; };
 		9D3E2FBC24C9CB17002144FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E2FBB24C9CB17002144FC /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1078E124CBAC5F00A9C83F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D1078E524CBAE1100A9C83F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9D1078E724CBAEBE00A9C83F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9D3E2FB424C9CB17002144FC /* Message Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3E2FB724C9CB17002144FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3E2FB924C9CB17002144FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D1078DE24CB90BD00A9C83F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D3E2FBD24C9CB17002144FC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D1078DF24CB90D900A9C83F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D3E2FBB24C9CB17002144FC /* ViewController.swift */,
+				9D1078E124CBAC5F00A9C83F /* LoginViewController.swift */,
+				9D1078E524CBAE1100A9C83F /* RegisterViewController.swift */,
+				9D1078E724CBAEBE00A9C83F /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D1078E024CB90FB00A9C83F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9D3E2FAB24C9CB17002144FC = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +88,11 @@
 		9D3E2FB624C9CB17002144FC /* Message Me */ = {
 			isa = PBXGroup;
 			children = (
+				9D1078E024CB90FB00A9C83F /* Model */,
+				9D1078DE24CB90BD00A9C83F /* View */,
+				9D1078DF24CB90D900A9C83F /* Controller */,
 				9D3E2FB724C9CB17002144FC /* AppDelegate.swift */,
 				9D3E2FB924C9CB17002144FC /* SceneDelegate.swift */,
-				9D3E2FBB24C9CB17002144FC /* ViewController.swift */,
-				9D3E2FBD24C9CB17002144FC /* Main.storyboard */,
 				9D3E2FC024C9CB19002144FC /* Assets.xcassets */,
 				9D3E2FC224C9CB19002144FC /* LaunchScreen.storyboard */,
 				9D3E2FC524C9CB19002144FC /* Info.plist */,
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1078E324CBAC5F00A9C83F /* LoginViewController.swift in Sources */,
+				9D1078E624CBAE1100A9C83F /* RegisterViewController.swift in Sources */,
 				9D3E2FBC24C9CB17002144FC /* ViewController.swift in Sources */,
 				9D3E2FB824C9CB17002144FC /* AppDelegate.swift in Sources */,
+				9D1078E824CBAEBE00A9C83F /* ChatViewController.swift in Sources */,
 				9D3E2FBA24C9CB17002144FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JQZ4GPTEQ;
 				INFOPLIST_FILE = "Message Me/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JQZ4GPTEQ;
 				INFOPLIST_FILE = "Message Me/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
