@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -18,8 +19,23 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func loginButtonIsPressed(_ sender: UIButton) {
+        if let email = emailTextField.text, let password = passwordTextField.text{
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+              guard let strongSelf = self else { return }
+                
+                if let e = error {
+                    print(e)
+                }
+                else{
+                    self!.performSegue(withIdentifier: "loginbutton", sender: self)
+                }
+              // ...
+            }
+        }
         
-        self.performSegue(withIdentifier: "loginbutton", sender: self)
+        
+        
+        
     }
     /*
     // MARK: - Navigation
