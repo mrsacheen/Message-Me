@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>149537034747-d2u5m6fo078nmsccc3t69lfmk7hqjr40.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.149537034747-d2u5m6fo078nmsccc3t69lfmk7hqjr40</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA95wduK3DJ3WXE6UvEf23qpOnBj6Uq-Xc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>149537034747</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sackhanaal.Message-Me</string>
+	<key>PROJECT_ID</key>
+	<string>messageme-36a91</string>
+	<key>STORAGE_BUCKET</key>
+	<string>messageme-36a91.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:149537034747:ios:4f9c762e1a0d7b2551fb5e</string>
+	<key>DATABASE_URL</key>
+	<string>https://messageme-36a91.firebaseio.com</string>
+</dict>
+</plist>
